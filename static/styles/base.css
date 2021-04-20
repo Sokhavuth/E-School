@@ -1,4 +1,13 @@
 /*static/styles/base.css*/
+:root{
+  --background: #56bcc5;
+  --background-dark: #317075;
+  --background-light: #71e4f4;
+  --yellow: #ffd343;
+  --body-font: 14px/1.5 Vidaloka, OdorMeanChey;
+  --link: lightgrey;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +15,7 @@
 }
 a{
   text-decoration: none;
-  color: lightgrey;
+  color: var(--link);
 }
 a:hover{
   opacity: .7;
@@ -17,10 +26,7 @@ a:hover{
 }
 
 body{
-  font: 14px/1.5 Vidaloka, OdorMeanChey;
-  
-}
-
-.widget{
-  background: rgb(73, 0, 0);
+  font: var(--body-font);
+  color: white;
+  background: var(--background);
 }

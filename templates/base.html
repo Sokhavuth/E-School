@@ -11,9 +11,16 @@
     <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
     <link rel="icon" href="{% static 'images/site_logo.png' %}" >
     
-    {% block insert_into_head %}<!-- to add -->{% endblock %}
+    {% block insert_into_head %}<!-- to be implemented -->{% endblock %}
   </head>
   <body>
-    ស្វាគមន៍​មក​កាន់​គេហទំព័រ E-School ។
+    {% include 'partials/header.html' %}
+
+    {% block main %}
+      {% block content %}<!-- to be implemented -->{% endblock %}
+      {% block sidebar %}<!-- to be implemented -->{% endblock %}
+    {% endblock %}
+
+    {% include 'partials/footer.html' %}
   </body>
 </html>
