@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ site_title }}</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/setup.css' %}">
+    <link rel="icon" href="{% static 'images/site_logo.png' %}" >
+    
+    {% block insert_into_head %}<!-- to add -->{% endblock %}
+  </head>
+  <body>
+    ស្វាគមន៍​មក​កាន់​គេហទំព័រ E-School ។
+  </body>
+</html>
