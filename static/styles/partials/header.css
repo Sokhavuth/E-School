@@ -12,6 +12,10 @@
   font: 35px/1.5 BlackOpsOne;
 }
 
+.header .logo a{
+  color: white;
+}
+
 .header .login{
   text-align: right;
   font: 16px/1.5 Oswald;
